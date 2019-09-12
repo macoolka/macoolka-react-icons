@@ -1,0 +1,90 @@
+{
+  "name": "macoolka-react-icons",
+  "version": "0.2.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "reinstall": "rm -rf node_modules/ && yarn install",
+    "clean": "rm -rf lib/ coverage/ ",
+    "lint": "tslint -p tsconfig.json",
+    "lint:fix": "tslint -p tsconfig.json --fix",
+    "test": "jest",
+    "build": "rm -rf lib/ && tsc ",
+    "precommit": "npm run lint",
+    "prepush": "npm run test",
+    "all": "npm run clean && tsc && jest  --coverage && tslint -p tsconfig.json",
+    "coverage": "rimraf coverage && jest  --coverage",
+    "docs": "macoolka-doc",
+    "generate": "ts-node ./gen/bin"
+  },
+  "dependencies": {
+  
+  
+    "macoolka-react-core": "0.2.0",
+   
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "fp-ts": "^2.0.5",
+    "macoolka-compare": "^0.2.2",
+    "macoolka-string": "^0.2.3",
+    "macoolka-object": "^0.2.4",
+    "macoolka-predicate": "^0.2.1",
+    "@types/enzyme": "^3.10.3",
+    "@types/mustache": "^0.8.32",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/rimraf": "^2.0.2",
+    "@types/styled-components": "^4.1.19",
+    "@types/svgo": "^1.2.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.9.0",
+    "macoolka-app": "^0.2.2",
+    "macoolka-collection": "^0.2.0",
+    "macoolka-doc": "^0.2.2",
+    "macoolka-i18n": "^0.2.0",
+    "macoolka-log-core": "^0.2.1",
+    "macoolka-prettier": "^0.2.1",
+    "macoolka-store-core": "^0.2.2",
+    "macoolka-store-fs": "^0.2.0",
+    "macoolka-typescript": "^0.2.1",
+    "material-design-icons": "^3.0.1",
+    "mustache": "^3.0.3",
+    "rimraf": "^2.6.3",
+    "svgo": "^1.3.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.6.3"
+  },
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mocoolka",
+    "css",
+    "functional"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(./gen/*|\\.(test|spec))\\.(ts|tsx)$"
+    
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macoolka/macoolka-react-icons.git"
+  },
+  "homepage": "https://github.com/macoolka/macoolka-react-icons"
+}

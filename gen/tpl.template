@@ -1,0 +1,6 @@
+import * as React from 'react';
+import createSvgIcon from './utils';
+//tslint:disable
+export default createSvgIcon(
+  <g>{{{paths}}}</g>
+, '{{className}}');
